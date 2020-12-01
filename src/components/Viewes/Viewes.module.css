@@ -1,0 +1,47 @@
+.Viewes{
+    display: flex;
+    justify-content: center;
+}
+
+.expense{
+    box-shadow: 5px 5px 4px rgb(175, 82, 82);
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 400px;
+    height: 40px;
+    background-color: salmon;
+}
+
+.income{
+    box-shadow: 5px 5px 4px rgb(107, 168, 107);
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 400px;
+    height: 40px;
+    background-color: lightgreen;
+}
+
+.percent{
+    color: red;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 10px;
+    background-color: rgb(245, 165, 156);
+}
+
+@media screen and (max-width: 813px) {
+    .income {
+        width: 300px;
+    }
+
+    .expense {
+        width: 300px;
+    }
+}

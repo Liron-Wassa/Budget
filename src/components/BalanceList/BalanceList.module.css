@@ -1,0 +1,13 @@
+.BalanceList{
+    display: flex;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 813px) {
+    .BalanceList {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+  

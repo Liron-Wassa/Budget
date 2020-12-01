@@ -1,0 +1,49 @@
+.InputsContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+    height: 60px;
+    background-color: rgb(211, 205, 205);
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+.Inputs{
+    display: flex;
+    height: 40px;
+}
+
+.description{
+    width: 250px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 5px;
+    outline: none;
+}
+
+.sum{
+    width: 250px;
+    margin-right: 5px;
+    padding-left: 5px;
+    outline: none;
+}
+
+.add{
+    outline: none;
+}
+
+.select{
+    outline: none;
+    padding: 0 3px;
+}
+
+@media screen and (max-width: 813px) {
+    .description{
+        width: 115px;
+    }
+    
+    .sum{
+        width: 115px;
+    }
+}
