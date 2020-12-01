@@ -16,9 +16,8 @@
 
 .li{
     display: flex;
-    justify-content: space-around;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    justify-content: space-between;
+    padding: 10px 20px;
     border-bottom: 1px solid black;
 }
 
@@ -33,6 +32,8 @@
 
 .delete{
     color: lightgreen;
+    margin-left: 10px;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 813px) {

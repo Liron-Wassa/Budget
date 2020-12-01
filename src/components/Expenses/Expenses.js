@@ -22,16 +22,18 @@ class Expenses extends Component {
                 <strong>
                    <span>{expense.description}</span>
                 </strong>
-                <span>
-                    <strong>
-                        <span>{expense.sign}</span>
-                        <span>{this.context.numberWithCommas(Number(expense.sum).toFixed(2))}</span>
-                    </strong>
-                    <span className={classes.percent}>
-                        {percent === Infinity ? <span>-</span> : <span>{Math.floor(Number(expense.sum) * 100 / incomes)}%</span>}
+                <div>
+                    <span>
+                        <strong>
+                            <span>{expense.sign}</span>
+                            <span>{this.context.numberWithCommas(Number(expense.sum).toFixed(2))}</span>
+                        </strong>
+                        <span className={classes.percent}>
+                            {percent === Infinity ? <span>-</span> : <span>{Math.floor(Number(expense.sum) * 100 / incomes)}%</span>}
+                        </span>
                     </span>
-                </span>
-                <i onClick={() => this.context.deleteExpense(index)} className={`fas fa-trash-alt ${classes.delete}`}/>
+                    <i onClick={() => this.context.deleteExpense(index)} className={`fas fa-trash-alt ${classes.delete}`}/>
+                </div>
             </li>
         });
 

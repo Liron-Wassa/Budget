@@ -11,6 +11,7 @@ export default class Viewes extends Component {
         let expenses = 0;
         let incomes = 0;
         let percent = 0;
+        let percentIsValid = false;
         
         for (let idx = 0; idx < this.context.incomes.length; idx++) {
             incomes += Number(this.context.incomes[idx].sum);
@@ -21,6 +22,7 @@ export default class Viewes extends Component {
         }
         
         percent = expenses * 100 / incomes;
+        percentIsValid = ((percent && !isNaN(percent)) && (percent !== Infinity));
         
         return (
             <div className={classes.Viewes}>
@@ -41,9 +43,11 @@ export default class Viewes extends Component {
                         <span>
                             <span>-</span>
                             <span>{this.context.numberWithCommas(expenses.toFixed(2))}</span>
-                            <span className={classes.percent}>
-                                {percent === Infinity ? <span>-</span> : percent ? <span>{Math.floor(percent)}%</span> : <span>-</span>}
-                            </span>
+                            {percentIsValid ?
+                                <span className={classes.percent}>
+                                    {percent === Infinity ? <span>-</span> : percent ? <span>{Math.floor(percent)}%</span> : <span>-</span>}
+                                </span>
+                            : null}
                         </span>
                     </div>
                 </div>

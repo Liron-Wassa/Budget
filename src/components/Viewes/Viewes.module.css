@@ -4,26 +4,26 @@
 }
 
 .expense{
-    box-shadow: 5px 5px 4px rgb(175, 82, 82);
+    box-shadow: 0 0 5px 1px rgb(175, 82, 82);
     margin-bottom: 10px;
     border-radius: 5px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    width: 400px;
-    height: 40px;
+    width: 350px;
+    padding: 10px 20px;
     background-color: salmon;
 }
 
 .income{
-    box-shadow: 5px 5px 4px rgb(107, 168, 107);
+    box-shadow: 0 0 5px 1px rgb(107, 168, 107);
     margin-bottom: 10px;
     border-radius: 5px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    width: 400px;
-    height: 40px;
+    width: 350px;
+    padding: 10px 20px;
     background-color: lightgreen;
 }
 

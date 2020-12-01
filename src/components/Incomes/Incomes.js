@@ -13,13 +13,15 @@ class Incomes extends Component {
                 <strong>
                     <span>{income.description}</span>
                 </strong>
-                <strong>
-                    <span>
-                        <span>{income.sign}</span>
-                        <span>{this.context.numberWithCommas(Number(income.sum).toFixed(2))}</span>
-                    </span>
-                </strong>
-                <i onClick={() => this.context.deleteIncome(index)} className={`fas fa-trash-alt ${classes.delete}`}/>
+                <div>
+                    <strong>
+                        <span>
+                            <span>{income.sign}</span>
+                            <span>{this.context.numberWithCommas(Number(income.sum).toFixed(2))}</span>
+                        </span>
+                    </strong>
+                    <i onClick={() => this.context.deleteIncome(index)} className={`fas fa-trash-alt ${classes.delete}`}/>
+                </div>
             </li>
         });
         
